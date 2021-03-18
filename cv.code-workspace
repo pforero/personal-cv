@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.wordWrap": "on",
+		"cSpell.userWords": [
+			"Forero",
+			"Allfunds"
+		],
+		"cSpell.ignoreWords": [
+			"Forero's",
+			"letterpaper",
+			"noedge",
+			"skyblue",
+			"darknight",
+			"datalake",
+			"Banif",
+			"SAIS",
+			"COEURE",
+			"EABCN",
+			"Henning",
+			"Marimón",
+			"MRes"
+		]
+	}
+}
