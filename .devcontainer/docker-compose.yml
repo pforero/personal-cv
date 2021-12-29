@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  vscode:
+    image: mrchoke/texlive
+    volumes:
+      - ../:/personal-cv
+    entrypoint: /bin/sh -c "while sleep 1000; do :; done"

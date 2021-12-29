@@ -1,0 +1,182 @@
+{
+    "name": "personal-cv-dev",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "vscode",
+    "runServices": ["vscode"],
+    "shutdownAction": "stopCompose",
+	"workspaceFolder": "/personal-cv",
+    "extensions": [
+        "james-yu.latex-workshop",
+		"streetsidesoftware.code-spell-checker",
+		"streetsidesoftware.code-spell-checker-spanish"
+    ],
+    "settings": {
+		"editor.wordWrap": "on",
+		"cSpell.enabledLanguageIds": [
+			"latex",
+		],
+		"cSpell.userWords": [
+			"Forero",
+			"Allfunds"
+		],
+		"cSpell.ignoreWords": [
+			"Forero's",
+			"letterpaper",
+			"noedge",
+			"skyblue",
+			"darknight",
+			"datalake",
+			"Banif",
+			"SAIS",
+			"COEURE",
+			"EABCN",
+			"Henning",
+			"Marimón",
+			"MRes",
+			"colors",
+			"color"
+		],
+		"latex-workshop.latex.autoBuild.run": "never",
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "makeall",
+				"tools": [
+					"resume-en",
+					"resume-es",
+					"cv-en",
+					"cv-es",
+					"coverletter-en",
+					"coverletter-es",
+				]
+			},
+			{
+				"name": "resume-en",
+				"tools": [
+					"resume-en"
+				]
+			},
+			{
+				"name": "resume-es",
+				"tools": [
+					"resume-es"
+				]
+			},
+			{
+				"name": "cv-en",
+				"tools": [
+					"cv-en"
+				]
+			},
+			{
+				"name": "cv-es",
+				"tools": [
+					"cv-es"
+				]
+			},
+			{
+				"name": "coverletter-en",
+				"tools": [
+					"coverletter-en"
+				]
+			},
+			{
+				"name": "coverletter-es",
+				"tools": [
+					"coverletter-es"
+				]
+			},
+		],
+		"latex-workshop.latex.tools": [
+			{
+				"name": "resume-en",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/en",
+					"-jobname=PilarAcedoRico_Resume_EN",
+					"resume-en"
+				],
+				"env": {}
+			},
+			{
+				"name": "resume-es",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/es",
+					"-jobname=PilarAcedoRico_Resume_ES",
+					"resume-es"
+				],
+				"env": {}
+			},
+			{
+				"name": "cv-en",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/en",
+					"-jobname=PilarAcedoRico_CV_EN",
+					"cv-en"
+				],
+				"env": {}
+			},
+			{
+				"name": "cv-es",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/es",
+					"-jobname=PilarAcedoRico_CV_ES",
+					"cv-es"
+				],
+				"env": {}
+			},
+			{
+				"name": "coverletter-en",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/en",
+					"-jobname=PilarAcedoRico_CoverLetter_EN",
+					"coverletter-en"
+				],
+				"env": {}
+			},
+			{
+				"name": "coverletter-es",
+				"command": "latexmk",
+				"args": [
+					"-synctex=0",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdflua",
+					"-shell-escape",
+					"-outdir=files/es",
+					"-jobname=PilarAcedoRico_CoverLetter_ES",
+					"coverletter-es"
+				],
+				"env": {}
+			},
+		],
+	}
+}
